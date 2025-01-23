@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Comptaible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HuPfeZi Hof Arbeiten</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <div class="tab">
+        <img src="Illustrations/Hupfezihof Logo.jpg">
+        <button class="tablinks" onclick="openTask(event, 'Aufgaben')" id="defaultOpen">Aufgaben</button>
+        <button class="tablinks" onclick="openTask(event, 'Kalender')">Kalender</button>
+    </div>
+
+    <div id="Aufgaben" class="tabcontent">
+        <input id="myToDo" placeholder="Aufgabe" type="text">
+        <button class="button button1" onclick="addTask()">Aufgabe anlegen</button>
+        <hr style="color:black;height:2px;background-color: black;">
+        <div id="myTask">
+        </div>
+    </div>
+
+    <div id="Kalender" class="tabcontent">
+        <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>Dezember<br><span style="font-size:18px">2024</span></li>
+            </ul>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            ...etc
+          </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
