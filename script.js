@@ -35,6 +35,8 @@ function addTask(){
             <span id=${clicks} onclick="deleteTask(id)" class="button button2" >&times;</span></div>`;
     }
     localStorage.setItem("Task_"+clicks, Task);
+    
+    //file = new File("C:/Users/phili/OneDrive/Documents/HuPfeZi/Arbeitszeiten/www/global_storage.txt");
     for (let i = clicks; i < clicks+1; i++) {
       myTask.innerHTML += localStorage.getItem("Task_"+i);
     }
@@ -69,6 +71,7 @@ function deleteTask(id){
     localStorage.removeItem("Task_"+id);
     localStorage.removeItem(checkboxes.id);
     localStorage.removeItem(selectboxes.id);
+    localStorage.Count = localStorage.Count - 1
   }
 }
 
