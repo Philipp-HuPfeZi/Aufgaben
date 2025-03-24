@@ -5,8 +5,8 @@ clicks = parseInt(localStorage.getItem("Count")) || 0
 for (let i = 1; i < clicks+1; i++) {
   myTask.innerHTML += localStorage.getItem("Task_"+i);
 }
-myTask.innerHTML = localStorage.clear()
-localStorage.Count = localStorage.Count - 1
+//myTask.innerHTML = localStorage.clear()
+//localStorage.Count = localStorage.Count - 1
 
 function addTask(){
     let currentDay = new Date().getDate();
